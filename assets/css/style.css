@@ -14,8 +14,8 @@
 
 .wrapper {
   background-color: #f2f6f7;
-  font-size: 0;
   padding: 32px 0;
+  width: 100%;
 }
 
 .inner {
@@ -30,7 +30,7 @@
   box-sizing: border-box;
   margin-bottom: 32px;
   padding: 48px 64px;
-}
+} 
 
 .form-title {
   color: #545658;
@@ -55,9 +55,13 @@
   font-size: 13px;
   font-weight: 500;
   padding: 13px;
+  text-align: center;
   transition: 0.3s;
 }
 
+.button-init {
+  text-decoration: none;
+}
 
 .d_flex {
   display: flex;
@@ -87,6 +91,7 @@
 }
 
 .google {
+  background-color: #fff;
   color: #dd4b39;
 }
 
@@ -106,7 +111,6 @@
 
 .form-head {
   margin: 20px 0;
-  font-size: 16px;
 }
 
 .form-head::before {
@@ -127,6 +131,7 @@
 
 .label-text {
   color: #545658;
+  display: block;
   font-size: 12px;
   margin-bottom: 5px;
 }
@@ -172,7 +177,6 @@
 .name:last-child {
   margin-left: 16px;
 }
-
 
 .gender-input:checked + span::after {
   content: "";
@@ -240,11 +244,12 @@
   content: "";
   position: absolute;
   left: 6px;
+  top: 50%;
   transform: rotate(45deg);
   height: 16px;
   width: 8px;
   margin-top: -12px;
-  border-right: 3px solid #81bfbd;
+  border-right: 3px solid #01bfbd;
   border-bottom: 3px solid #01bfbd;
 }
 
